@@ -16,3 +16,8 @@ From the creator who brought you the wildly popular [humanize](http://github.com
     
     >> 1.ordinalise
     => "first"
+    
+# Changes
+
+    rename ordinalize => full_ordinalize
+    To avoid conflicts with rails

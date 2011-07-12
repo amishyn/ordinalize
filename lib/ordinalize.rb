@@ -4,7 +4,7 @@ rescue LoadError; end
 require 'humanize'
 
 module Ordinalize
-  def ordinalize
+  def full_ordinalize
     humanized = self.humanize
     # 13-19
     humanized += "th" if humanized =~ /teen$/
@@ -18,7 +18,7 @@ module Ordinalize
     output ||= humanized
   end
   
-  alias_method :ordinalise, :ordinalize
+  alias_method :full_ordinalise, :full_ordinalize
   
   def split_dashes
     parts = humanize.split("-")
